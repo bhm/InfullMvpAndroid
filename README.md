@@ -1,4 +1,4 @@
-[InFullMvp] MVP lib for android
+MVP library for android
 ==================================
 
 in your build.gradle:
@@ -36,17 +36,29 @@ dependencies {
 }
 ```
 
-[InFullMvp] Android Studio Template
+Android Studio Template
 ==================================
 
 For Mac:
 --------
-Just copy InFullMvp folders from android-studio-plugin to $ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/activities/
+Just copy InFullMvp folders from android-studio-plugin to 
+````
+$ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/activities/
+````
 
 For Windows:
 --------
-Just copy InFullMvp folders from android-studio-plugin to $ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\activities\
+Just copy InFullMvp folders from android-studio-plugin to 
+````
+$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\activities\
+````
 
+For Linux:
+--------
+Just copy InFullMvp folders from android-studio-plugin to 
+````
+$ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/activities/
+````
 
 Then you can use it in Android studio from New -> InFullMvp
 ![template-usecause.png](android-studio-plugin/template_usecause.png?raw=true)

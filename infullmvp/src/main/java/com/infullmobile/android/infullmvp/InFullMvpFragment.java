@@ -85,6 +85,20 @@ public abstract class InFullMvpFragment<
     }
 
     @Override
+    public void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        getPresenter().onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(final int requestCode,
+                                           @NonNull final String[] permissions,
+                                           @NonNull final int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        getPresenter().onRequestPermissionResult(requestCode, permissions, grantResults);
+    }
+
+    @Override
     public void onSaveInstanceState(final Bundle outState) {
         getPresenter().saveInstanceState(outState);
         super.onSaveInstanceState(outState);
